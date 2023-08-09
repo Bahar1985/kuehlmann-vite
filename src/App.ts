@@ -26,9 +26,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
 	<p> Made With <i class="fa-regular fa-heart"></i> by Dci Student</p>
 </section>
 
-
-	<!-- <script--->
-<script>
+`;
 
  const navLinks = document.getElementById("navLinks");
  function showMenu() {
@@ -38,5 +36,4 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
 	 navLinks.style.right = "-200px";
  }
 
-</script>
-`;
+

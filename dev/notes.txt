@@ -1,2 +1,3 @@
 die firma seite hinzufügen = Erledigt
-styles und seiten inhalte einfügen
+styles und seiten inhalte einfügen = Erleidigt
+??? i elemente mit quaryselector definieren und attach clickevents 
