@@ -1,1 +1,2 @@
-die firma seite hinzufügen
+die firma seite hinzufügen = Erledigt
+styles und seiten inhalte einfügen
