@@ -1,8 +1,8 @@
 import "./styles/main.scss";
-import { getMenu, getCurrentPage } from "./Router";
+import { getMenu, getCurrentPage, getHeaderClass } from "./Router";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
-<section class="header">
+<section class="${getHeaderClass()}">
 
 	${getMenu()}
 </section>

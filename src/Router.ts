@@ -38,7 +38,9 @@ const getPageIdCode = (pageName: string) => {
   pageName = tools.cleanCharactersToAscii(pageName);
   return pageName.toLowerCase();
 };
-
+export const getHeaderClass = () => {
+return "header-"+currentPageIdCode;	
+}
 export const getMenu = () => {
   const getMenuClass = (pageName: string) => {
     const pageIdCode = tools.cleanCharactersToAscii(pageName.toLowerCase());
