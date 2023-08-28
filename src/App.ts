@@ -28,14 +28,18 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
 
 `;
 
-const navLinks = document.querySelector<HTMLDivElement>("#navLinks");
-function showMenu() {
-  if (navLinks) {
-    navLinks.style.right = "0";
+const navLinksElem = document.querySelector<HTMLDivElement>("#navLinks");
+const iconTimesElem = document.querySelector<HTMLSpanElement>(".iconTimes");
+const iconBarsElem = document.querySelector<HTMLSpanElement>(".iconBars");
+
+iconTimesElem?.addEventListener("click", () => {
+  if (navLinksElem) {
+    navLinksElem.style.right = "-200px";
   }
-}
-function hideMenu() {
-  if (navLinks) {
-    navLinks.style.right = "-200px";
+});
+
+iconBarsElem?.addEventListener("click", () => {
+  if (navLinksElem) {
+    navLinksElem.style.right = "0";
   }
-}
+});

@@ -55,7 +55,7 @@ export const getMenu = () => {
 	<nav class="menu">
 	<a href="index.html"><img src="images/cropped-kuehlmann_logo-removebg-preview.png"></a>
 	<div class="nav-links" id="navLinks">
-		<i class="fa fa-times" onclick="hideMenu()"></i>
+		<i class="fa fa-times iconTimes" ></i>
 		<ul>
 			${pageNames
         .map(
@@ -67,8 +67,7 @@ export const getMenu = () => {
         .join("")}
 		</ul>
 		</div>
-		<i class="fa fa-bars" onclick="showMenu()"></i>
-	</nav>
+		<i class="fa fa-bars iconBars" ></i>
 `;
 };
 
