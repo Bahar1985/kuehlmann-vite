@@ -28,12 +28,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
 
 `;
 
- const navLinks = document.getElementById("navLinks");
- function showMenu() {
-	 navLinks.style.right = "0";
- }
- function hideMenu() {
-	 navLinks.style.right = "-200px";
- }
-
-
+const navLinks = document.querySelector<HTMLDivElement>("#navLinks");
+function showMenu() {
+  if (navLinks) {
+    navLinks.style.right = "0";
+  }
+}
+function hideMenu() {
+  if (navLinks) {
+    navLinks.style.right = "-200px";
+  }
+}
